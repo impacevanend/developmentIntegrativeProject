@@ -16,17 +16,17 @@ def main_loop(mapa, inicio, final):
         mapa[px][py] = 'P'
         mostrar_mapa(mapa)
         mapa[px][py] = '.'
-        movimiento = readchar.readkey()
-        if movimiento == readchar.key.UP:  # Arriba
+        movimiento = readchar.readchar()
+        if movimiento == '\x1b[A':  # Arriba
             if mapa[px-1][py] == '.':
                 px -= 1
-        elif movimiento == readchar.key.DOWN:  # Abajo
+        elif movimiento == '\x1b[B':  # Abajo
             if mapa[px+1][py] == '.':
                 px += 1
-        elif movimiento == readchar.key.RIGHT:  # Derecha
+        elif movimiento == '\x1b[C':  # Derecha
             if mapa[px][py+1] == '.':
                 py += 1
-        elif movimiento == readchar.key.LEFT:  # Izquierda
+        elif movimiento == '\x1b[D':  # Izquierda
             if mapa[px][py-1] == '.':
                 py -= 1
 

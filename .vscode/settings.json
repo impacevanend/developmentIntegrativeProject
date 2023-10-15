@@ -1,3 +1,9 @@
 {
-    "terminal.integrated.sendKeybindingsToShell": true
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.defaultProfile.osx": "",
+    "terminal.integrated.env.windows": {
+
+    },
+    "terminal.integrated.allowChords": true
 }
